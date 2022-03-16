@@ -46,7 +46,7 @@ class MyServer(BaseHTTPRequestHandler):
                 return 1
             event = {**baseEvent , **qsl}
             print("Event: ", event)
-            event_batch.record(Event("MesenSample", event))
+            event_batch.record(Event("SuperMarioStats", event))
             return 0
 
     def log_message(self, format, *args):
